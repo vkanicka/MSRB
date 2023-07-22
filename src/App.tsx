@@ -4,7 +4,7 @@ import Awareness from './Components/Awareness/Awareness';
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-purple-400 h-screen p-2 overflow-hidden">
       <header className="App-header">
         <h1>MSRB App</h1>
       </header>

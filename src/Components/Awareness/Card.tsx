@@ -15,12 +15,12 @@ const Card = ({ item, index }: Props) => {
     
     
     return (
-        <button onClick={() => handleClick(Object.keys(item)[0])} className="w-full m-2 border-solid border-blue-300 border-2 rounded-lg p-2" key={`${index}-awareness-card`}>
+        <button onClick={() => handleClick(Object.keys(item)[0])} className={`${isFlipped ? 'bg-purple-500' : 'bg-purple-400'} w-full border-solid border-blue-300 border-2 rounded-lg p-2 h-full`} key={`${index}-awareness-card`}>
             {!isFlipped && (
-                <h3>{Object.keys(item)}</h3>
+                Object.keys(item)
             )}
             {isFlipped && (
-                <p>{ Object.values(item)}</p>
+                Object.values(item)
             )}
 
         </button>
